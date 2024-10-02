@@ -12,6 +12,7 @@ using namespace sf;
 
 int main()
 {
+	// Set language to Russian
 	setlocale(LC_ALL, "Rus");
 	// Here is the instabce of TextureHolder
 	TextureHolder holder;
@@ -127,13 +128,7 @@ int main()
 	levelUpText.setFillColor(Color::White);
 	levelUpText.setPosition(150, 250);
 	std::stringstream levelUpStream;
-	//levelUpStream <<
-		//"1- Increased rate of fire" <<
-		//"\n2- Increased clip size(next reload)" <<
-		//"\n3- Increased max health" <<
-		//"\n4- Increased run speed" <<
-		//"\n5- More and better health pickups" <<
-		//"\n6- More and better ammo pickups";
+	
 	levelUpText.setString(L" 1- Увеличить скорострельность\n2- Увеличить магазин \n3- Увеличить макс здоровье\n4- Увеличить скорость бега\n5- Улучшить аптечки\n6- Улучшить патроны");
 
 	// Ammo
@@ -188,8 +183,6 @@ int main()
 	zombiesRemainingText.setFont(font);
 	zombiesRemainingText.setCharacterSize(55);
 	zombiesRemainingText.setFillColor(Color::White);
-	zombiesRemainingText.setPosition(1500, 980);
-	zombiesRemainingText.setString(L"Зомби: 100");
 	Text zombiesRemainingText1;
 	zombiesRemainingText1.setFont(font);
 	zombiesRemainingText1.setCharacterSize(55);
@@ -203,8 +196,6 @@ int main()
 	waveNumberText.setFont(font);
 	waveNumberText.setCharacterSize(55);
 	waveNumberText.setFillColor(Color::White);
-	waveNumberText.setPosition(1250, 980);
-	waveNumberText.setString(L"Волна: 0");
 	Text waveNumberText1;
 	waveNumberText1.setFont(font);
 	waveNumberText1.setCharacterSize(55);
